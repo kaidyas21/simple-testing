@@ -1,17 +1,11 @@
 pipeline {
-    //Agent -another remote machine
-    // Jenkins has master -node
-    agent any
+   agent any
 
-    stages{
-        stages('Checkout'){
-            steps{
-                checkout scm
-            }
-
-        }
-
-    }
-
-
+   stages {
+      stage('Checkout') {
+         steps{
+            checkout scm
+         }
+      }
+   }
 }
