@@ -135,7 +135,7 @@ public class WalletTest {
     public void testThatAfterDepositingOneTimeThatTheSecondTimeRuns() {
         emptyWallet.deposit(10);
         emptyWallet.deposit(30);
-        assertThat(emptyWallet.getBalance()).isEqualTo(30);
+        assertThat(emptyWallet.getBalance()).isEqualTo(40);
     }
 
 
